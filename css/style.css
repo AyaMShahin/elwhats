@@ -1,0 +1,120 @@
+/* Common Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+.container {
+  max-width: 1320px !important;
+}
+.lang {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+.bg {
+  background-image: url(../images/hero-bg.svg);
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  transform: rotate(0deg);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+.arrow-right::after {
+  font-family: "Font Awesome 5 free"; /* change like this */
+  font-weight: 900; /* insert this definition */
+  font-size: 13px;
+  content: "\f054";
+  display: inline-block;
+  color: #0c39f8;
+}
+/* End of Common Styles */
+header {
+  background-color: #14ee80;
+}
+
+/* Hero Section */
+.hero {
+  font-family: "Cairo", sans-serif;
+  padding-bottom: 70px;
+}
+.hero .left {
+  padding-top: 185px;
+}
+.hero h1 {
+  font-size: 70px;
+  line-height: 95px;
+}
+.hero .left p {
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 36px;
+  letter-spacing: -0.3px;
+  color: #222f3f;
+  margin: 18px 0px 30px 0px;
+}
+.hero .left a {
+  background-color: #333;
+  color: #fff;
+  font-weight: 400;
+  max-width: 205px;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.4px;
+  margin-top: 10px;
+}
+.hero .right {
+  margin-top: 100px;
+}
+/* End of Hero Section */
+
+/* Features Section */
+.features {
+  font-family: "Cairo", sans-serif;
+  padding-top: 130px;
+  padding-bottom: 30px;
+}
+.features .left h2 {
+  font-size: 60px;
+  line-height: 74px;
+}
+.features .left p {
+  font-size: 21px;
+  line-height: 36px;
+  letter-spacing: -0.3px;
+  color: #666666;
+}
+.features .left .start {
+  color: #0c39f8;
+  font-size: 17px;
+  line-height: 28px;
+}
+/* End Features */
+footer {
+  background-color: #ddf7ea;
+  padding: 50px 0;
+}
+footer .f-content .heart {
+  margin: 20px 0;
+}
+footer .f-content .logo-img {
+  margin-bottom: 20px;
+}
