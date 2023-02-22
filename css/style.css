@@ -13,6 +13,10 @@ body {
     rgba(255, 255, 255, 0)
   );
 }
+html,
+body {
+  overflow-x: hidden;
+}
 :root {
   --switches-bg-color: white;
   --switches-label-color: #333;
@@ -87,10 +91,6 @@ header {
 .hero .left {
   padding-top: 185px;
 }
-.hero h1 {
-  font-size: 70px;
-  line-height: 95px;
-}
 .hero .left p {
   font-weight: normal;
   font-size: 21px;
@@ -113,6 +113,24 @@ header {
 } */
 .hero .right {
   margin-top: 100px;
+}
+@media (min-width: 576px) {
+  .hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 60px;
+    line-height: 66px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero h1 {
+    font-size: 70px;
+    line-height: 95px;
+  }
 }
 /* End of Hero Section */
 
