@@ -15,6 +15,9 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <!-- FontAwesome Stylesheet -->
@@ -53,15 +56,15 @@
   <!-- Hero Area -->
   <section class="hero position-relative z-index-1">
     <div class="container">
-      <div class="content d-flex justify-content-between">
+      <div class="content row d-flex justify-content-between " data-aos="fade-right" data-aos-duration="1000">
         <div class="left d-flex flex-column col-xl-5 col-lg-6 col-md-8 col-sm-10 pr-0">
           <h1> Get More Customers Using WhatsApp </h1>
           <p> Get more customers by sending them bulk & personalised WhatsApp messages in an easy way. </p>
           <a href="" class="start-btn">Start Now</a>
         </div>
 
-        <div class="right col-xl-7 col-lg-5 col-md-8">
-          <img class="d-block mx-auto p-2 mt-xl-n10" src="./images/whats-screen2.png" alt="hero image">
+        <div class="right col-lg-5 col-md-8" data-aos="fade-left" data-aos-duration="1000">
+          <img class="w-100" src="./images/whats-screen2.png" alt="hero image">
         </div>
       </div>
     </div>
@@ -73,12 +76,13 @@
   <!-- Features Section -->
   <section class="features">
     <div class="container">
-      <div class="content d-flex justify-content-center align-items-center">
-        <div class="right col-lg-6 col-md-8">
+      <div class="content row d-flex justify-content-center align-items-center">
+        <div class="right col-lg-5 col-md-8" data-aos="fade-right" data-aos-duration="1000">
           <img class="w-100" src="./images/content-img-2.png" alt="content image">
         </div>
 
-        <div class="left d-flex flex-column col-xl-4 offset-xl-2 col-lg-6 col-md-8 col-sm-10">
+        <div class="left d-flex flex-column col-xl-4 offset-xl-2 col-lg-6 col-md-8 col-sm-10" data-aos="fade-left"
+          data-aos-duration="1000">
           <h2>Send Images and Videos</h2>
           <p> You can send images and videos to your customers in bulk using
             <a href="http://"><img src="./images/logo-black-en.png" alt="whats logo"></a>
@@ -95,16 +99,33 @@
   <!-- Pricing Section -->
   <section class="pricing">
     <div class="container">
-      <div class="head text-center">
+      <div class="head text-center" data-aos="fade-down" data-aos-duration="1000">
         <h2>Pricing </h2>
         <p>Send Bulk Whatsapp Messages to your customers — no coding required. </p>
       </div>
+
+      <div class="toggle-btn">
+        <div class="switches-container">
+          <input type="radio" id="switchMonthly" name="switchPlan" value="MONTHLY" checked="checked" />
+          <input type="radio" id="switchYearly" name="switchPlan" value="YEARLY" />
+          <label for="switchMonthly">MONTHLY</label>
+          <label for="switchYearly">YEARLY</label>
+          <div class="switch-wrapper">
+            <div class="switch">
+              <div class="text-uppercase">Monthly</div>
+              <div class="text-uppercase">Yearly</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
       <div class="row text-center justify-content-center content">
-        <div class="col-lg-4 item">
-          <div class="month-details pt-5">
+        <div class="col-lg-4 item pb-5 border" data-aos="fade-right" data-aos-duration="1000">
+          <div class="month-details pt-5 pb-4 border-bottom">
             <span class="mb-2 pack">1500 PACKAGE</span>
-            <h2>$5.5</h2>
-            <span class="text-uppercase">per month</span>
+            <h2 class="my-3 price">$5.5</h2>
+            <span class="mnth">PER MONTH</span>
           </div>
           <div class="package column">
             <span class="d-block txt">1500 messages / month</span>
@@ -116,38 +137,39 @@
           </div>
         </div>
 
-        <div class="col-lg-4 item position-relative active">
-          <div class="month-details  pt-5">
-            <span class="mb-2 pack">1500 PACKAGE</span>
-            <h2>$9.5</h2>
-            <span class="text-uppercase">per month</span>
+        <div class="col-lg-4 item border pb-5 position-relative active" data-aos="fade-up" data-aos-duration="1000">
+          <div class="month-details  pt-5 pb-4 border-bottom">
+            <span class="mb-2 pack">3000 PACKAGE</span>
+            <h2 class="my-3 price1">$9.5</h2>
+            <span class="mnth">PER MONTH</span>
           </div>
           <div class="package column">
-            <span class="d-block txt">1500 messages / month</span>
-            <span class="d-block txt">Up to 500 messages / day</span>
+            <span class="d-block txt">3000 messages / month </span>
+            <span class="d-block txt">Up to 1000 messages / day </span>
             <span class="d-block txt">Support by Whatsapp & Email</span>
             <span class="d-block txt">Image/Video Messages</span>
-            <span class="d-block txt">Max Media Size</span>
-            <a href="" class="start-btn main d-block">Start Now</a>
+            <span class="d-block txt">Max Media Size 10MB </span>
+            <a href="" class="start-btn main d-block btn-active">Start Now</a>
           </div>
         </div>
 
-        <div class="col-lg-4 item">
-          <div class="month-details pt-5">
-            <span class="mb-2 pack">1500 PACKAGE</span>
-            <h2>$19</h2>
-            <span class="text-uppercase">per month</span>
+        <div class="col-lg-4 border item pb-5" data-aos="fade-up" data-aos-duration="1000">
+          <div class="month-details pt-5 pb-4 border-bottom">
+            <span class="mb-2 pack">7000 PACKAGE</span>
+            <h2 class="my-3 price2">$19</h2>
+            <span class="mnth">PER MONTH</span>
           </div>
           <div class="package column">
-            <span class="d-block txt">1500 messages / month</span>
-            <span class="d-block txt">Up to 500 messages / day</span>
-            <span class="d-block txt">Support by Whatsapp & Email</span>
+            <span class="d-block txt">7000 messages / month </span>
+            <span class="d-block txt">Up to 1500 messages / day </span>
+            <span class="d-block txt">Premium Support by Whatsapp & Email </span>
             <span class="d-block txt">Image/Video Messages</span>
-            <span class="d-block txt">Max Media Size</span>
+            <span class="d-block txt">Max Media Size 30MB </span>
             <a href="" class="start-btn d-block">Start Now</a>
           </div>
         </div>
       </div>
+      <p class="info mt-4">For more info on how it works, <a href="">click here</a></p>
     </div>
   </section>
 
@@ -177,6 +199,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+  <!-- Main Script -->
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
