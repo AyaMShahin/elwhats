@@ -78,6 +78,10 @@ body {
   letter-spacing: -0.4px;
   margin-top: 10px;
 }
+.start-btn:hover {
+  text-decoration: none;
+  color: #fff;
+}
 /* End of Common Styles */
 header {
   background-color: #14ee80;
@@ -141,8 +145,9 @@ header {
   padding-bottom: 30px;
 }
 .features .left h2 {
-  font-size: 60px;
-  line-height: 74px;
+  /* font-size: 60px;
+  line-height: 74px; */
+  margin-bottom: 35px;
 }
 .features .left p {
   font-size: 21px;
@@ -154,6 +159,28 @@ header {
   color: #0c39f8;
   font-size: 17px;
   line-height: 28px;
+  font-weight: bold;
+}
+@media (min-width: 480px) {
+  .features .left {
+    text-align: center;
+  }
+  .features .left h2 {
+    font-size: 38px;
+    line-height: 52px;
+  }
+}
+@media (min-width: 768px) {
+  .features .left h2 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
+@media (min-width: 992px) {
+  .features .left h2 {
+    font-size: 60px;
+    line-height: 74px;
+  }
 }
 /* End Features */
 .pricing {
@@ -165,8 +192,8 @@ header {
   margin-bottom: 85px;
 }
 .pricing .head h2 {
-  font-size: 60px;
-  line-height: 74px;
+  /* font-size: 60px;
+  line-height: 74px; */
   margin-bottom: 35px;
 }
 .pricing .head p {
@@ -326,6 +353,25 @@ header {
 .pricing .info a:hover {
   text-decoration: none;
 }
+@media (min-width: 480px) {
+  .pricing .head h2 {
+    font-size: 38px;
+    line-height: 52px;
+  }
+}
+@media (min-width: 768px) {
+  .pricing .head h2 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
+@media (min-width: 992px) {
+  .pricing .head h2 {
+    font-size: 60px;
+    line-height: 74px;
+  }
+}
+/* Pricing End */
 /* Footer styles */
 footer {
   background-color: #ddf7ea;
